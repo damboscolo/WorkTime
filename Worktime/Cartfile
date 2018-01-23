@@ -1,0 +1,6 @@
+github "RxSwiftCommunity/RxSwiftExt"
+github "Swinject/Swinject" "2.1.0"
+github "Swinject/SwinjectAutoregistration" "2.1.0"
+github "onevcat/Kingfisher"
+github "Moya/Moya"
+github "PureLayout/PureLayout"
