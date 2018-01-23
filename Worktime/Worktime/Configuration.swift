@@ -7,17 +7,20 @@
 //
 
 import Foundation
-//import Swinject
-//import Store
-//import Domain
-//import Presentation
-//
-//public enum Configuration {
-//    
-//    static var container: Containar = Container()
-//    
-//    public static func setup() {
-//        // needs fill
-//    }
-//}
+import Swinject
+import Store
+import Domain
+import Presentation
+
+public enum Configuration {
+    
+    static var container: Container = Container()
+    
+    public static func setup() {
+        Store.DataSource.setup(with: container)
+        Store.Repository.setup(with: container)
+        Domain.Cases.setup(with: container)
+        Presentation.Scene.setup(with: container)
+    }
+}
 
